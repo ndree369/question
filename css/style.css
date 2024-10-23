@@ -1,0 +1,172 @@
+/* Body */
+body {
+    background-image: url("images/bg.jpg"); /* Replace "background-image.jpg" with the path to your background image */
+    background-size: cover; /* Cover the entire viewport */
+    background-position: center; /* Center the background image */
+    /*background-color: #f9f9f9; /* Light gray background */
+    font-family: 'Roboto', sans-serif; /* Modern sans-serif font */
+    color: #333; /* Dark text color */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+/* Buttons */
+.buttons {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    flex-direction: row;
+    align-items: end;
+    flex-wrap: wrap;
+}
+
+.button {
+    margin: 0 10px;
+    padding: 12px 24px; /* Increase padding for better touch targets */
+    border: none;
+    border-radius: 25px; /* Slightly increase border-radius for a softer look */
+    color: white; /* White text color */
+    background-color: #4CAF50; /* Green */
+    font-weight: 600; /* Increase font weight for emphasis */
+    cursor: pointer;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease; /* Add transition for smoother hover effect */
+}
+
+.button:hover {
+    filter: brightness(90%); /* Darken the button slightly on hover */
+}
+
+#no-button {
+    margin: 0 10px;
+    color: white;
+    background-color: red;
+    height: 40px !important;
+    width: auto;
+    border: none;
+    cursor: pointer;
+    margin-top: 10px;
+
+    p {
+        margin: 0;
+        object-fit: contain;
+    }
+}
+
+#yes-button {
+    margin: 0 10px;
+    color: white;
+    border: none;
+    background-color: green;
+    cursor: pointer;
+    height: 40px;
+
+    p {
+        margin: 0;
+        object-fit: contain;
+    }
+}
+
+/* Make responsive for mobile */
+@media (max-width: 768px) {
+    body {
+        padding: 0 20px;
+    }
+}
+
+/* Container */
+.container {
+    max-width: 800px; /* Set maximum width for content */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 20px;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Message */
+.message {
+    display: none;
+}
+
+/* Banner GIF */
+.banner-gif img {
+    max-width: 100%;
+    height: auto;
+    margin-top: 20px;
+}
+
+/* Language Selector */
+.language-selector {
+    margin-top: 30px;
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.language-selector label {
+    margin-right: 10px;
+}
+
+.language-selector select {
+    padding: 5px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+    padding: 10px 20px; /* Add padding */
+    border: none;
+    border-radius: 20px; /* Make it rounded */
+    background-color: #a8a8a8; /* Light gray background */
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Smooth transition */
+}
+
+.language-selector select:hover {
+    background-color: #444444; /* Darker gray on hover */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add subtle shadow on hover */
+}
+
+.language-selector select:focus {
+    outline: none;
+    box-shadow: 0 0 0 2px #4CAF50; /* Add custom focus effect */
+}
+
+/* Creator Link */
+.creator {
+    text-decoration: none;
+    color: #333;
+}
+
+.creator:visited {
+    text-decoration: none;
+    color: #333;
+}
+
+.creator:hover {
+    text-decoration: underline;
+    color: #555;
+}
+
+/* CSS For Mobile */
+@media (max-width: 768px) {
+    body {
+        padding: 0 20px;
+    }
+
+    .language-selector {
+        margin-top: 30px;
+        font-family: Roboto, sans-serif;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+}
